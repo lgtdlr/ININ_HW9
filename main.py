@@ -2,7 +2,6 @@ from matplotlib import pyplot as plt
 from scipy import stats
 import numpy as np
 import seaborn
-
 import math
 import xlrd
 
