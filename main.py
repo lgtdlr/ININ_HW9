@@ -120,15 +120,15 @@ def calculate_confidence_interval_samples(values, mean, confidence):
         print("Mean finish time for the process is greater than " + str(mean) + " seconds with a " + str(
             confidence * 100) + " confidence level.")
 
+
 def calculate_confidence_interval_summarized_data(count, xBar, stdDev, alpha):
     result = []
-    Z = stats.norm.ppf(alpha/2)
+    Z = stats.norm.ppf(alpha / 2)
 
-    result.append(xBar-(Z*(stdDev/np.sqrt(count))))
-    result.append(xBar+(Z*(stdDev/np.sqrt(count))))
+    result.append(xBar - (Z * (stdDev / np.sqrt(count))))
+    result.append(xBar + (Z * (stdDev / np.sqrt(count))))
 
     print("\nConfidence Interval: " + str(result))
-
 
 
 if __name__ == '__main__':
