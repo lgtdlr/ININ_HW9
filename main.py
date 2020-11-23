@@ -13,6 +13,7 @@ https://web.archive.org/web/20191113020101/https://medium.com/@rrfd/testing-for-
 https://towardsdatascience.com/6-ways-to-test-for-a-normal-distribution-which-one-to-use-9dcf47d8fa93
 '''
 
+
 def parse_sheet(file):
     title = ""
     data = []
@@ -66,7 +67,7 @@ def generate_probability_plot(title, data):
     plt.show()
 
 
-def test_normality(title, data):
+def verify_normality(title, data):
     print("\nRESULTS\n")
     # Shapiro-Wilk test
     # Tests if sample came from a normal dist
@@ -165,7 +166,7 @@ if __name__ == '__main__':
     # Problem 3c
     print("PROBLEM 3c")
     generate_probability_plot(title, values)
-    test_normality(title, values)
+    verify_normality(title, values)
 
     # Problem 3d
     print("PROBLEM 3d")
