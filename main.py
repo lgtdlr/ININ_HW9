@@ -6,6 +6,12 @@ import seaborn
 import math
 import xlrd
 
+'''
+RESOURCES
+https://towardsdatascience.com/a-complete-guide-to-confidence-interval-and-examples-in-python-ff417c5cb593
+https://web.archive.org/web/20191113020101/https://medium.com/@rrfd/testing-for-normality-applications-with-python-6bf06ed646a9
+https://towardsdatascience.com/6-ways-to-test-for-a-normal-distribution-which-one-to-use-9dcf47d8fa93
+'''
 
 def parse_sheet(file):
     title = ""
